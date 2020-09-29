@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System; 
 
 namespace Tutorial_Class
 {
@@ -6,7 +6,8 @@ namespace Tutorial_Class
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+             Day_2.PastAssignment.CalculateAge();
+         
         }
     }
 }
