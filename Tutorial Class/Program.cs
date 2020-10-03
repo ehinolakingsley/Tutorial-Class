@@ -6,8 +6,10 @@ namespace Tutorial_Class
     {
         static void Main(string[] args)
         {
-             Day_2.PastAssignment.CalculateAge();
-         
+            Chapter_2.Question_13.SolveQuestion();
+             
+            Console.Read();
+             
         }
     }
 }
