@@ -6,7 +6,7 @@ namespace Tutorial_Class
     {
         static void Main(string[] args)
         {
-            Chapter_2.Question_13.SolveQuestion();
+            Chapter_3.Question_10.SolveQuestion();
              
             Console.Read();
              
