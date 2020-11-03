@@ -26,7 +26,7 @@ namespace Tutorial_Class.Chapter_3
 
             int convertedInputed = int.Parse(input);
 
-            if(convertedInputed < 1 || convertedInputed > 100)
+            if(convertedInputed < 2 || convertedInputed > 99)
             {
                 Console.WriteLine("You are a chicken! You enter a value out of range.");
 
@@ -76,5 +76,33 @@ namespace Tutorial_Class.Chapter_3
         }
 
 
+
+        //Print out all the prime numbers btw 1-100
+        public static void Assignment()
+        { 
+            Console.WriteLine("This application prints all prime numbers between 1-100.");
+             
+
+            for (int input = 2; input <= 100; input++)
+            {  
+                for (int count = 2; count <= input; count++)
+                {
+                    int remainder = input % count;
+
+                    if (remainder == 0)
+                        if (count == input)
+                        {
+                            Console.Write("{0}, ", input);
+                            //  break;
+                        }
+                        else
+                            break; 
+                } 
+            }
+
+
+
+             
+        }
     }
 }

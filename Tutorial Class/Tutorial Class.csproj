@@ -4,8 +4,8 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>Tutorial_Class</RootNamespace>
-    <AssemblyVersion>1.10.291.304</AssemblyVersion>
-    <FileVersion>1.10.291.304</FileVersion>
+    <AssemblyVersion>1.11.307.308</AssemblyVersion>
+    <FileVersion>1.11.307.308</FileVersion>
   </PropertyGroup>
 
 </Project>
