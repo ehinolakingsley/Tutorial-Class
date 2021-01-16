@@ -21,8 +21,20 @@ namespace Tutorial_Class.Chapter_3
             Console.WriteLine("Enter any number between 1 and 100.");
 
             string input = Console.ReadLine();
-
+             
             string questionResponse;
+
+            bool? y = false;
+
+            if (y.HasValue == true)
+            {
+                input = "Kingsley";
+                bool p = y.GetValueOrDefault();
+            }
+            else
+                y = true;
+             
+
 
             int convertedInputed = int.Parse(input);
 
