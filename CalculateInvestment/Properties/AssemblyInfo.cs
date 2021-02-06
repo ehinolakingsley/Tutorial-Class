@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("GUI Tutorial")]
+[assembly: AssemblyTitle("CalculateInvestment")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("GUI Tutorial")]
+[assembly: AssemblyProduct("CalculateInvestment")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("829f0c63-3b3f-4aa0-ba08-5f92c0ddab59")]
+[assembly: Guid("a63090a5-cf37-4c78-859f-f0ac92008078")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.1.1.9")]
-[assembly: AssemblyFileVersion("1.1.1.9")]
+[assembly: AssemblyVersion("1.2.4.37")]
+[assembly: AssemblyFileVersion("1.2.4.37")]
