@@ -122,6 +122,7 @@ namespace CalculateInvestment
             this.btnCal.TabIndex = 2;
             this.btnCal.Text = "Calculate";
             this.btnCal.UseVisualStyleBackColor = true;
+            this.btnCal.Click += new System.EventHandler(this.btnCal_Click);
             // 
             // btnExit
             // 
@@ -132,6 +133,7 @@ namespace CalculateInvestment
             this.btnExit.TabIndex = 3;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // frmInvoiceTotal
             // 
