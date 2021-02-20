@@ -22,9 +22,12 @@ namespace CalculateInvestment
            this. Close();
         }
 
+        int numberOfInvoices = 0;
+        decimal totalInvoices = 0m;
+
         private void btnCal_Click(object sender, EventArgs e)
         {
-            decimal subTotal = decimal.Parse(txtSubtotal.Text);
+            decimal subTotal = decimal.Parse(txtEnterSubTotal.Text);
 
             decimal discountPercent = 0m;
 
@@ -47,12 +50,35 @@ namespace CalculateInvestment
             txtDiscPerc.Text = discountPercent.ToString("p1");
             txtDiscAmt.Text = discountAmt.ToString("c2");
             txtTotal.Text = invoiceTotal.ToString("c2");
+            txtSubtotal.Text = subTotal.ToString("c2");
 
-            txtSubtotal.Focus();
-            //txtSubtotal.Text = subTotal.ToString("c2");
+            txtEnterSubTotal.Focus();
+
+            numberOfInvoices++;
+            totalInvoices = totalInvoices + invoiceTotal;
+
+
+            txtNumOfInvoices.Text = numberOfInvoices.ToString();
+            txtTotalInvoices.Text = totalInvoices.ToString("c2");
+            txtInvoiceAverage.Text = (totalInvoices / numberOfInvoices).ToString("c2");
+
         }
 
+        private void btnClearTotal_Click(object sender, EventArgs e)
+        {
+            numberOfInvoices = 0;
+            totalInvoices = 0m;
 
+            txtEnterSubTotal.Text = "";
+            txtSubtotal.Text = "";
+            txtDiscPerc.Text = "";
+            txtDiscAmt.Text = "";
+            txtTotal.Text = "";
+            txtNumOfInvoices.Text = "";
+            txtTotalInvoices.Text = "";
+            txtInvoiceAverage.Text = "";
 
+            txtEnterSubTotal.Focus();
+        }
     }
 }
