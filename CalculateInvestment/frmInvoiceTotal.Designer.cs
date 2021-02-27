@@ -48,6 +48,13 @@ namespace CalculateInvestment
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnClearTotal = new System.Windows.Forms.Button();
+            this.txtLowestInvoice = new System.Windows.Forms.TextBox();
+            this.txtLargestInvoice = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.btnFutureValue = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbSubtotal
@@ -165,7 +172,7 @@ namespace CalculateInvestment
             // 
             // txtInvoiceAverage
             // 
-            this.txtInvoiceAverage.Location = new System.Drawing.Point(386, 119);
+            this.txtInvoiceAverage.Location = new System.Drawing.Point(390, 83);
             this.txtInvoiceAverage.Name = "txtInvoiceAverage";
             this.txtInvoiceAverage.ReadOnly = true;
             this.txtInvoiceAverage.Size = new System.Drawing.Size(146, 20);
@@ -175,7 +182,7 @@ namespace CalculateInvestment
             // 
             // txtTotalInvoices
             // 
-            this.txtTotalInvoices.Location = new System.Drawing.Point(386, 93);
+            this.txtTotalInvoices.Location = new System.Drawing.Point(390, 57);
             this.txtTotalInvoices.Name = "txtTotalInvoices";
             this.txtTotalInvoices.ReadOnly = true;
             this.txtTotalInvoices.Size = new System.Drawing.Size(146, 20);
@@ -185,7 +192,7 @@ namespace CalculateInvestment
             // 
             // txtNumOfInvoices
             // 
-            this.txtNumOfInvoices.Location = new System.Drawing.Point(386, 67);
+            this.txtNumOfInvoices.Location = new System.Drawing.Point(390, 31);
             this.txtNumOfInvoices.Name = "txtNumOfInvoices";
             this.txtNumOfInvoices.ReadOnly = true;
             this.txtNumOfInvoices.Size = new System.Drawing.Size(146, 20);
@@ -196,7 +203,7 @@ namespace CalculateInvestment
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(281, 96);
+            this.label1.Location = new System.Drawing.Point(285, 60);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(89, 13);
             this.label1.TabIndex = 13;
@@ -205,7 +212,7 @@ namespace CalculateInvestment
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(281, 122);
+            this.label2.Location = new System.Drawing.Point(285, 86);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(88, 13);
             this.label2.TabIndex = 12;
@@ -214,7 +221,7 @@ namespace CalculateInvestment
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(281, 70);
+            this.label3.Location = new System.Drawing.Point(285, 34);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(102, 13);
             this.label3.TabIndex = 10;
@@ -223,13 +230,72 @@ namespace CalculateInvestment
             // btnClearTotal
             // 
             this.btnClearTotal.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnClearTotal.Location = new System.Drawing.Point(263, 174);
+            this.btnClearTotal.Location = new System.Drawing.Point(264, 174);
             this.btnClearTotal.Name = "btnClearTotal";
             this.btnClearTotal.Size = new System.Drawing.Size(75, 23);
             this.btnClearTotal.TabIndex = 3;
             this.btnClearTotal.Text = "Clear Total";
             this.btnClearTotal.UseVisualStyleBackColor = true;
             this.btnClearTotal.Click += new System.EventHandler(this.btnClearTotal_Click);
+            // 
+            // txtLowestInvoice
+            // 
+            this.txtLowestInvoice.Location = new System.Drawing.Point(390, 141);
+            this.txtLowestInvoice.Name = "txtLowestInvoice";
+            this.txtLowestInvoice.ReadOnly = true;
+            this.txtLowestInvoice.Size = new System.Drawing.Size(146, 20);
+            this.txtLowestInvoice.TabIndex = 19;
+            this.txtLowestInvoice.TabStop = false;
+            this.txtLowestInvoice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtLargestInvoice
+            // 
+            this.txtLargestInvoice.Location = new System.Drawing.Point(390, 115);
+            this.txtLargestInvoice.Name = "txtLargestInvoice";
+            this.txtLargestInvoice.ReadOnly = true;
+            this.txtLargestInvoice.Size = new System.Drawing.Size(146, 20);
+            this.txtLargestInvoice.TabIndex = 18;
+            this.txtLargestInvoice.TabStop = false;
+            this.txtLargestInvoice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(285, 118);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(83, 13);
+            this.label4.TabIndex = 17;
+            this.label4.Text = "Largest Invoice:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(285, 144);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(82, 13);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "Lowest Invoice:";
+            // 
+            // btnFutureValue
+            // 
+            this.btnFutureValue.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnFutureValue.Location = new System.Drawing.Point(6, 19);
+            this.btnFutureValue.Name = "btnFutureValue";
+            this.btnFutureValue.Size = new System.Drawing.Size(165, 23);
+            this.btnFutureValue.TabIndex = 20;
+            this.btnFutureValue.Text = "Calculate Future Value";
+            this.btnFutureValue.UseVisualStyleBackColor = true;
+            this.btnFutureValue.Click += new System.EventHandler(this.btnFutureValue_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.btnFutureValue);
+            this.groupBox1.Location = new System.Drawing.Point(556, 31);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(177, 138);
+            this.groupBox1.TabIndex = 21;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Actions";
             // 
             // frmInvoiceTotal
             // 
@@ -238,7 +304,12 @@ namespace CalculateInvestment
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.CancelButton = this.btnExit;
-            this.ClientSize = new System.Drawing.Size(595, 216);
+            this.ClientSize = new System.Drawing.Size(800, 216);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.txtLowestInvoice);
+            this.Controls.Add(this.txtLargestInvoice);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.btnClearTotal);
             this.Controls.Add(this.txtInvoiceAverage);
             this.Controls.Add(this.txtTotalInvoices);
@@ -261,6 +332,7 @@ namespace CalculateInvestment
             this.Name = "frmInvoiceTotal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Invoice Total";
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -287,6 +359,12 @@ namespace CalculateInvestment
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnClearTotal;
+        private System.Windows.Forms.TextBox txtLowestInvoice;
+        private System.Windows.Forms.TextBox txtLargestInvoice;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btnFutureValue;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
 
